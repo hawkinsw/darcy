@@ -1,8 +1,32 @@
 <html>
-  <head>
-    <title>ESLint: Add a Rule</title>
-  </head>
-  <body>
-    This is where you add a rule.
-  </body>
+
+<head>
+  <title>ESLint: Add a Rule</title>
+</head>
+
+<body>
+  <form method="POST" action="/api/add_rule">
+    <table>
+      <tr>
+        <td align="RIGHT"> Rule Key: </td>
+        <td>
+          <input name="new_eslint_rule_key" type="TEXT" /><br>
+        </td>
+      </tr>
+      <tr>
+        <td align="RIGHT"> Rule Value: </td>
+        <td>
+          <input name="new_eslint_rule_value" type="TEXT" /><br>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="SUBMIT" value="Add" />
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
 </html>
