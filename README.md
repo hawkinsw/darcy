@@ -3,6 +3,7 @@
 ### Installation
 
 1. `npm install`
+1. `./create_darcy_db.sh`
 
 ### Running
 1. `npm run watch`
