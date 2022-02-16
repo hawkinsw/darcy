@@ -1,0 +1,30 @@
+{
+  "name": "darcy",
+  "version": "1.0.0",
+  "description": "Darcy Droptables",
+  "main": "index.js",
+  "author": "",
+  "license": "GPL3",
+  "dependencies": {
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "express": "^4.17.2",
+    "md5": "^2.3.0",
+    "npm-watch": "^0.11.0",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0",
+    "sqlite3": "^5.0.2"
+  },
+  "watch": {
+    "express": {
+      "patterns": [
+        "*.js"
+      ]
+    }
+  },
+  "scripts": {
+    "express": "node index.js",
+    "watch": "npm-watch express"
+  }
+}
