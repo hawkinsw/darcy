@@ -1,14 +1,7 @@
-const sqlite = require("sqlite3").verbose();
+const Sqlite = require("better-sqlite3");
 
 const SOURCE_FILE = "./darcy.db";
 
-const db = new sqlite.Database(SOURCE_FILE, (err) => {
-  if (err) {
-    console.log("I could not open the darcy database.");
-    throw err;
-  } else {
-    console.log("Got the database opened!\n");
-  }
-});
+const db = new Sqlite(SOURCE_FILE);
 
 module.exports = db;
