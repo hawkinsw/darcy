@@ -33,6 +33,7 @@ app.post("/api/add_rule", (req, res) => {
   db.exec(addRuleSql);
 
   // TODO: Safer, safer!! And, why?
+  // eslint-disable-next-line no-constant-condition
   if (false) {
     const addRuleStmt = sqldb.prepare("INSERT INTO eslint VALUES (?, ?);");
     if (!addRuleStmt) {
